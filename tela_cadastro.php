@@ -22,7 +22,8 @@
         $estado = $_POST['estado'];
         $endereco = $_POST['endereco'];
 
-        $result = mysqli_query($conexao, "INSERT INTO usuario(nome_usuario,email_usuario,telefone_usuario,sexo_usuario,date_nasc_usuario,cidade_usuario,estado_usuario, endereco_usuario)")
+        $result = mysqli_query($conexao, "INSERT INTO usuario(nome_usuario,email_usuario,telefone_usuario,sexo_usuario,date_nasc_usuario,cidade_usuario,estado_usuario, endereco_usuario)
+        VALUES ($nome,$email,$telefone,$genero,$data_nasc,$cidade,)")
     }
 ?>
 
