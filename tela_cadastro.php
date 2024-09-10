@@ -12,6 +12,17 @@
         // print_r('Data de nascimento: '.$_POST['data_nasc']);
         // print_r('<br>');
         // print_r('Estado: '.$_POST['estado']);
+
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $telefone = $_POST['telefone'];
+        $genero = $_POST['genero'];
+        $data_nasc = $_POST['data_nasc'];
+        $cidade = $_POST['cidade'];
+        $estado = $_POST['estado'];
+        $endereco = $_POST['endereco'];
+
+        $result = mysqli_query($conexao, "INSERT INTO usuario(nome_usuario,email_usuario,telefone_usuario,sexo_usuario,date_nasc_usuario,cidade_usuario,estado_usuario, endereco_usuario)")
     }
 ?>
 
